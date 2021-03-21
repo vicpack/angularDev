@@ -16,6 +16,7 @@ import { PageHistoryComponent } from './histories/presentation/pages/page-histor
 import { PageDriverComponent } from './drivers/presentation/pages/page-driver/page-driver.component';
 import { PageUserComponent } from './users/presentation/pages/page-user/page-user.component';
 
+//interfase para las rutas
 const routes: Routes = [
   { path: '', component: PageLoginComponent },
   { path: 'medics', component: PageMedicComponent },
@@ -26,7 +27,7 @@ const routes: Routes = [
   { path: '**', redirectTo: '' },
   // { path: '**', component: PageLoginComponent },
 ];
-
+//importacion de modulos 
 @NgModule({
   declarations: [AppComponent, ItemComponent],
   imports: [
@@ -37,9 +38,9 @@ const routes: Routes = [
     HistoriesModule,
     DriversModule,
     UsersModule,
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes),//metodo statico forRoot para las rutas
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

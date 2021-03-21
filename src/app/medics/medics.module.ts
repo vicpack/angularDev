@@ -8,6 +8,6 @@ import { ListMedicsComponent } from './presentation/views/list-medics/list-medic
 @NgModule({
   declarations: [PageMedicComponent, ListMedicsComponent],
   imports: [CommonModule, MedicsRoutingModule],
-  exports: [PageMedicComponent],
+  exports: [PageMedicComponent],// para poder usarlo
 })
-export class MedicsModule {}
+export class MedicsModule { }

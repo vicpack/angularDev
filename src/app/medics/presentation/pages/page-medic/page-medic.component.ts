@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './page-medic.component.html',
   styleUrls: ['./page-medic.component.css']
 })
+//se exporta para que el page medic se pueda utilizar desde appmodule
 export class PageMedicComponent implements OnInit {
 
   constructor() { }
